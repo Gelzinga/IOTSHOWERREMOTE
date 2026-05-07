@@ -1,0 +1,45 @@
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig '/auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/sdkconfig'
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/esp5/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/esp5/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/esp5/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /opt/esp5/python_env/idf5.2_py3.12_env/bin/python (found version "3.12.3") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "IOTSHOWERREMOTE" version: 238badb
+-- Adding linker script /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /opt/esp5/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update ble bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 input json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon power protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /opt/esp5/esp-idf/components/app_trace /opt/esp5/esp-idf/components/app_update /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/ble /opt/esp5/esp-idf/components/bootloader /opt/esp5/esp-idf/components/bootloader_support /opt/esp5/esp-idf/components/bt /opt/esp5/esp-idf/components/cmock /opt/esp5/esp-idf/components/console /opt/esp5/esp-idf/components/cxx /opt/esp5/esp-idf/components/driver /opt/esp5/esp-idf/components/efuse /opt/esp5/esp-idf/components/esp-tls /opt/esp5/esp-idf/components/esp_adc /opt/esp5/esp-idf/components/esp_app_format /opt/esp5/esp-idf/components/esp_bootloader_format /opt/esp5/esp-idf/components/esp_coex /opt/esp5/esp-idf/components/esp_common /opt/esp5/esp-idf/components/esp_eth /opt/esp5/esp-idf/components/esp_event /opt/esp5/esp-idf/components/esp_gdbstub /opt/esp5/esp-idf/components/esp_hid /opt/esp5/esp-idf/components/esp_http_client /opt/esp5/esp-idf/components/esp_http_server /opt/esp5/esp-idf/components/esp_https_ota /opt/esp5/esp-idf/components/esp_https_server /opt/esp5/esp-idf/components/esp_hw_support /opt/esp5/esp-idf/components/esp_lcd /opt/esp5/esp-idf/components/esp_local_ctrl /opt/esp5/esp-idf/components/esp_mm /opt/esp5/esp-idf/components/esp_netif /opt/esp5/esp-idf/components/esp_netif_stack /opt/esp5/esp-idf/components/esp_partition /opt/esp5/esp-idf/components/esp_phy /opt/esp5/esp-idf/components/esp_pm /opt/esp5/esp-idf/components/esp_psram /opt/esp5/esp-idf/components/esp_ringbuf /opt/esp5/esp-idf/components/esp_rom /opt/esp5/esp-idf/components/esp_system /opt/esp5/esp-idf/components/esp_timer /opt/esp5/esp-idf/components/esp_wifi /opt/esp5/esp-idf/components/espcoredump /opt/esp5/esp-idf/components/esptool_py /opt/esp5/esp-idf/components/fatfs /opt/esp5/esp-idf/components/freertos /opt/esp5/esp-idf/components/hal /opt/esp5/esp-idf/components/heap /opt/esp5/esp-idf/components/http_parser /opt/esp5/esp-idf/components/idf_test /opt/esp5/esp-idf/components/ieee802154 /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/input /opt/esp5/esp-idf/components/json /opt/esp5/esp-idf/components/log /opt/esp5/esp-idf/components/lwip /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/main /opt/esp5/esp-idf/components/mbedtls /opt/esp5/esp-idf/components/mqtt /opt/esp5/esp-idf/components/newlib /opt/esp5/esp-idf/components/nvs_flash /opt/esp5/esp-idf/components/nvs_sec_provider /opt/esp5/esp-idf/components/openthread /opt/esp5/esp-idf/components/partition_table /opt/esp5/esp-idf/components/perfmon /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/power /opt/esp5/esp-idf/components/protobuf-c /opt/esp5/esp-idf/components/protocomm /opt/esp5/esp-idf/components/pthread /opt/esp5/esp-idf/components/sdmmc /opt/esp5/esp-idf/components/soc /opt/esp5/esp-idf/components/spi_flash /opt/esp5/esp-idf/components/spiffs /opt/esp5/esp-idf/components/tcp_transport /opt/esp5/esp-idf/components/ulp /opt/esp5/esp-idf/components/unity /opt/esp5/esp-idf/components/usb /opt/esp5/esp-idf/components/vfs /opt/esp5/esp-idf/components/wear_levelling /opt/esp5/esp-idf/components/wifi_provisioning /opt/esp5/esp-idf/components/wpa_supplicant /opt/esp5/esp-idf/components/xtensa
+-- Configuring done (7.0s)
+-- Generating done (3.1s)
+-- Build files have been written to: /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build

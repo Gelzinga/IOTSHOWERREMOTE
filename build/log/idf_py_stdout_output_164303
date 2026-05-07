@@ -1,0 +1,41 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "IOTSHOWERREMOTE" version: 238badb
+-- Adding linker script /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /opt/esp5/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /opt/esp5/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update ble bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 input json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon power protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /opt/esp5/esp-idf/components/app_trace /opt/esp5/esp-idf/components/app_update /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/ble /opt/esp5/esp-idf/components/bootloader /opt/esp5/esp-idf/components/bootloader_support /opt/esp5/esp-idf/components/bt /opt/esp5/esp-idf/components/cmock /opt/esp5/esp-idf/components/console /opt/esp5/esp-idf/components/cxx /opt/esp5/esp-idf/components/driver /opt/esp5/esp-idf/components/efuse /opt/esp5/esp-idf/components/esp-tls /opt/esp5/esp-idf/components/esp_adc /opt/esp5/esp-idf/components/esp_app_format /opt/esp5/esp-idf/components/esp_bootloader_format /opt/esp5/esp-idf/components/esp_coex /opt/esp5/esp-idf/components/esp_common /opt/esp5/esp-idf/components/esp_eth /opt/esp5/esp-idf/components/esp_event /opt/esp5/esp-idf/components/esp_gdbstub /opt/esp5/esp-idf/components/esp_hid /opt/esp5/esp-idf/components/esp_http_client /opt/esp5/esp-idf/components/esp_http_server /opt/esp5/esp-idf/components/esp_https_ota /opt/esp5/esp-idf/components/esp_https_server /opt/esp5/esp-idf/components/esp_hw_support /opt/esp5/esp-idf/components/esp_lcd /opt/esp5/esp-idf/components/esp_local_ctrl /opt/esp5/esp-idf/components/esp_mm /opt/esp5/esp-idf/components/esp_netif /opt/esp5/esp-idf/components/esp_netif_stack /opt/esp5/esp-idf/components/esp_partition /opt/esp5/esp-idf/components/esp_phy /opt/esp5/esp-idf/components/esp_pm /opt/esp5/esp-idf/components/esp_psram /opt/esp5/esp-idf/components/esp_ringbuf /opt/esp5/esp-idf/components/esp_rom /opt/esp5/esp-idf/components/esp_system /opt/esp5/esp-idf/components/esp_timer /opt/esp5/esp-idf/components/esp_wifi /opt/esp5/esp-idf/components/espcoredump /opt/esp5/esp-idf/components/esptool_py /opt/esp5/esp-idf/components/fatfs /opt/esp5/esp-idf/components/freertos /opt/esp5/esp-idf/components/hal /opt/esp5/esp-idf/components/heap /opt/esp5/esp-idf/components/http_parser /opt/esp5/esp-idf/components/idf_test /opt/esp5/esp-idf/components/ieee802154 /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/input /opt/esp5/esp-idf/components/json /opt/esp5/esp-idf/components/log /opt/esp5/esp-idf/components/lwip /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/main /opt/esp5/esp-idf/components/mbedtls /opt/esp5/esp-idf/components/mqtt /opt/esp5/esp-idf/components/newlib /opt/esp5/esp-idf/components/nvs_flash /opt/esp5/esp-idf/components/nvs_sec_provider /opt/esp5/esp-idf/components/openthread /opt/esp5/esp-idf/components/partition_table /opt/esp5/esp-idf/components/perfmon /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/components/power /opt/esp5/esp-idf/components/protobuf-c /opt/esp5/esp-idf/components/protocomm /opt/esp5/esp-idf/components/pthread /opt/esp5/esp-idf/components/sdmmc /opt/esp5/esp-idf/components/soc /opt/esp5/esp-idf/components/spi_flash /opt/esp5/esp-idf/components/spiffs /opt/esp5/esp-idf/components/tcp_transport /opt/esp5/esp-idf/components/ulp /opt/esp5/esp-idf/components/unity /opt/esp5/esp-idf/components/usb /opt/esp5/esp-idf/components/vfs /opt/esp5/esp-idf/components/wear_levelling /opt/esp5/esp-idf/components/wifi_provisioning /opt/esp5/esp-idf/components/wpa_supplicant /opt/esp5/esp-idf/components/xtensa
+-- Configuring done (3.8s)
+-- Generating done (1.4s)
+-- Build files have been written to: /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build
+[1/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/14] Building C object esp-idf/ble/CMakeFiles/__idf_ble.dir/ble.c.obj
+[3/14] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[4/14] Linking C static library esp-idf/spiffs/libspiffs.a
+[5/14] Linking C static library esp-idf/ble/libble.a
+[6/14] Performing build step for 'bootloader'
+[1/1] cd /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/bootloader/esp-idf/esptool_py && /opt/esp5/python_env/idf5.2_py3.12_env/bin/python /opt/esp5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[7/14] No install step for 'bootloader'
+[8/14] Linking C static library esp-idf/main/libmain.a
+[9/14] Completed 'bootloader'
+[10/14] Generating ld/sections.ld
+[11/14] Building C object CMakeFiles/IOTSHOWERREMOTE.elf.dir/project_elf_src_esp32.c.obj
+[12/14] Linking CXX executable IOTSHOWERREMOTE.elf
+[13/14] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/IOTSHOWERREMOTE.bin
+[14/14] cd /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/esp-idf/esptool_py && /opt/esp5/python_env/idf5.2_py3.12_env/bin/python /opt/esp5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/partition_table/partition-table.bin /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/IOTSHOWERREMOTE.bin
+IOTSHOWERREMOTE.bin binary size 0x90010 bytes. Smallest app partition is 0x100000 bytes. 0x6fff0 bytes (44%) free.

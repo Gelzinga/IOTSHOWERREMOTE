@@ -1,0 +1,17 @@
+[1/9] Building C object esp-idf/ble/CMakeFiles/__idf_ble.dir/ble.c.obj
+[2/9] Linking C static library esp-idf/ble/libble.a
+[3/9] Performing build step for 'bootloader'
+[1/1] cd /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/bootloader/esp-idf/esptool_py && /opt/esp5/python_env/idf5.2_py3.12_env/bin/python /opt/esp5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/9] No install step for 'bootloader'
+[5/9] Completed 'bootloader'
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable IOTSHOWERREMOTE.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/IOTSHOWERREMOTE.bin
+[9/9] cd /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/esp-idf/esptool_py && /opt/esp5/python_env/idf5.2_py3.12_env/bin/python /opt/esp5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/partition_table/partition-table.bin /auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build/IOTSHOWERREMOTE.bin
+IOTSHOWERREMOTE.bin binary size 0x90010 bytes. Smallest app partition is 0x100000 bytes. 0x6fff0 bytes (44%) free.

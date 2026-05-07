@@ -1,0 +1,10 @@
+CMake Error at /opt/esp5/esp-idf/tools/cmake/build.cmake:268 (message):
+  Failed to resolve component 'nimble'.
+Call Stack (most recent call first):
+  /opt/esp5/esp-idf/tools/cmake/build.cmake:304 (__build_resolve_and_add_req)
+  /opt/esp5/esp-idf/tools/cmake/build.cmake:305 (__build_expand_requirements)
+  /opt/esp5/esp-idf/tools/cmake/build.cmake:599 (__build_expand_requirements)
+  /opt/esp5/esp-idf/tools/cmake/project.cmake:605 (idf_build_process)
+  CMakeLists.txt:3 (project)
+
+
