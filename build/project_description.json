@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "IOTSHOWERREMOTE",
-    "project_version":    "238badb",
+    "project_version":    "80bcf03-dirty",
     "project_path":       "/auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE",
     "idf_path":           "/opt/esp5/esp-idf",
     "build_dir":          "/auto/fse/gelzinga/IOTSHOWERREMOTE/IOTSHOWERREMOTE/build",

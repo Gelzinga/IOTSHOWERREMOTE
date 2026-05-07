@@ -1,0 +1,109 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  6 2026 18:10:39[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=198f4h (104692) map[0m
+[0;32mI (140) esp_image: segment 1: paddr=0002991c vaddr=3ffbdb60 size=04a70h ( 19056) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=0002e394 vaddr=40080000 size=01c84h (  7300) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=58db8h (363960) map[0m
+[0;32mI (279) esp_image: segment 4: paddr=00088de0 vaddr=40081c84 size=1746ch ( 95340) load[0m
+[0;32mI (329) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (329) boot: Disabling RNG early entropy source...[0m
+[0;32mI (341) cpu_start: Multicore app[0m
+[0;32mI (350) cpu_start: Pro cpu start user code[0m
+[0;32mI (350) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (350) cpu_start: Application information:[0m
+[0;32mI (353) cpu_start: Project name:     IOTSHOWERREMOTE[0m
+[0;32mI (358) cpu_start: App version:      80bcf03-dirty[0m
+[0;32mI (364) cpu_start: Compile time:     May  6 2026 19:49:32[0m
+[0;32mI (370) cpu_start: ELF file SHA256:  e22542ebb...[0m
+[0;32mI (375) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (380) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (385) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (390) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (395) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (402) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (408) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (414) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (420) heap_init: At 3FFC53B8 len 0001AC48 (107 KiB): DRAM[0m
+[0;32mI (426) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (432) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (439) heap_init: At 400990F0 len 00006F10 (27 KiB): IRAM[0m
+[0;32mI (447) spi_flash: detected chip: generic[0m
+[0;32mI (450) spi_flash: flash io: dio[0m
+[0;33mW (454) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (468) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (473) main_task: Started on CPU0[0m
+[0;32mI (483) main_task: Calling app_main()[0m
+[0;32mI (483) BLE_MODULE: Initializing BLE module[0m
+[0;32mI (503) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (503) BTDM_INIT: Bluetooth MAC: 08:a6:f7:66:32:66[0m
+[0;32mI (503) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (833) BLE_MODULE: BLE host task started[0m
+[0;32mI (833) BLE_MODULE: BLE init complete[0m
+[0;32mI (833) main_task: Returned from app_main()[0m
+[0;32mI (873) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (873) BLE_MODULE: BLE stack synced (ready)[0m
+[0;32mI (873) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (873) NimBLE: disc_mode=2[0m
+[0;32mI (883) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (893) NimBLE: 
+[0m
+[0;32mI (903) BLE_MODULE: Advertising started[0m
+[0;32mI (5883) BLE_MODULE: connection established; status=0[0m
+[0;32mI (5883) NimBLE: GAP procedure initiated: [0m
+[0;32mI (5883) NimBLE: connection parameter update; conn_handle=0 itvl_min=36 itvl_max=36 latency=3 supervision_timeout=500 min_ce_len=0 max_ce_len=0[0m
+[0;32mI (5893) NimBLE: 
+[0m
+[0;32mI (6563) BLE_MODULE: connection updated; status=0[0m
+[0;32mI (9263) BLE_MODULE: disconnected from peer; reason=531[0m
+[0;32mI (9263) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9263) NimBLE: disc_mode=2[0m
+[0;32mI (9263) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (9273) NimBLE: 
+[0m
+[0;32mI (9283) BLE_MODULE: Advertising started[0m
+[0;32mI (9413) BLE_MODULE: connection established; status=0[0m
+[0;32mI (9413) NimBLE: GAP procedure initiated: [0m
+[0;32mI (9423) NimBLE: connection parameter update; conn_handle=0 itvl_min=36 itvl_max=36 latency=3 supervision_timeout=500 min_ce_len=0 max_ce_len=0[0m
+[0;32mI (9433) NimBLE: 
+[0m
+[0;32mI (10073) BLE_MODULE: connection updated; status=0[0m
+[0;32mI (10973) BLE_MODULE: disconnected from peer; reason=531[0m
+[0;32mI (10973) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (10973) NimBLE: disc_mode=2[0m
+[0;32mI (10973) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (10983) NimBLE: 
+[0m
+[0;32mI (10993) BLE_MODULE: Advertising started[0m
+[0;32mI (19203) BLE_MODULE: connection established; status=0[0m
+[0;32mI (19203) NimBLE: GAP procedure initiated: [0m
+[0;32mI (19203) NimBLE: connection parameter update; conn_handle=0 itvl_min=36 itvl_max=36 latency=3 supervision_timeout=500 min_ce_len=0 max_ce_len=0[0m
+[0;32mI (19223) NimBLE: 
+[0m
+[0;32mI (19883) BLE_MODULE: connection updated; status=0[0m
+[0;32mI (23253) BLE_MODULE: connection updated; status=0[0m
+[0;32mI (23383) BLE_MODULE: connection updated; status=0[0m

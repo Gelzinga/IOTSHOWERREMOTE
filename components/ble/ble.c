@@ -11,6 +11,7 @@
 
 // GAP service (device name, identity)
 #include "services/gap/ble_svc_gap.h"
+#include "host/ble_gap.h"
 
 
 #include "ble.h"
@@ -31,6 +32,7 @@ static bool is_advertising = false;
 static void ble_app_on_sync(void);
 static void host_task(void *param);
 static void start_advertising(void);
+static int gap_event_handler(struct ble_gap_event *event, void *arg);
 // forward declarations are useful for telling a compiler about functions
 //This way if you call these functions before they are defined ( because c is linear)
 //There isn't an error because these are technically defined here. 
@@ -154,7 +156,7 @@ static void start_advertising(void)
         NULL,
         BLE_HS_FOREVER,
         &adv_params,
-        NULL,
+        gap_event_handler, //register callback
         NULL
     );
        
@@ -197,4 +199,90 @@ static void host_task(void *param)
      * Only runs if BLE stack stops
      */
     nimble_port_freertos_deinit();
+}
+
+//this function is for internal refrencing, telling you whether or not a phone has connected. 
+static int gap_event_handler(struct ble_gap_event *event, void *arg) {
+    /* Local variables */
+    int rc = 0;
+    struct ble_gap_conn_desc desc;
+
+    /* Handle different GAP event */
+    switch (event->type) {
+
+    /* Connect event */
+    case BLE_GAP_EVENT_CONNECT:
+        /* A new connection was established or a connection attempt failed. */
+        ESP_LOGI(TAG, "connection %s; status=%d",
+                event->connect.status == 0 ? "established" : "failed",
+                event->connect.status);
+
+        /* Connection succeeded */
+        if (event->connect.status == 0) {
+            /* Check connection handle */
+            rc = ble_gap_conn_find(event->connect.conn_handle, &desc);
+            if (rc != 0) {
+                ESP_LOGE(TAG,
+                        "failed to find connection by handle, error code: %d",
+                        rc);
+                return rc;
+            }
+
+            /* Print connection descriptor and turn on the LED */
+            // print_conn_desc(&desc);
+            // led_on();
+
+            /* Try to update connection parameters */
+            struct ble_gap_upd_params params = {.itvl_min = desc.conn_itvl,
+                                                .itvl_max = desc.conn_itvl,
+                                                .latency = 3,
+                                                .supervision_timeout =
+                                                    desc.supervision_timeout};
+            rc = ble_gap_update_params(event->connect.conn_handle, &params);
+            if (rc != 0) {
+                ESP_LOGE(
+                    TAG,
+                    "failed to update connection parameters, error code: %d",
+                    rc);
+                return rc;
+            }
+        }
+        /* Connection failed, restart advertising */
+        else {
+            start_advertising();
+        }
+        return rc;
+
+    /* Disconnect event */
+    case BLE_GAP_EVENT_DISCONNECT:
+        /* A connection was terminated, print connection descriptor */
+        ESP_LOGI(TAG, "disconnected from peer; reason=%d",
+                event->disconnect.reason);
+
+        /* Turn off the LED */
+        // led_off();
+
+        /* Restart advertising */
+        start_advertising();
+        return rc;
+
+
+
+    case BLE_GAP_EVENT_CONN_UPDATE:
+        /* The central has updated the connection parameters. */
+        ESP_LOGI(TAG, "connection updated; status=%d",
+                event->conn_update.status);
+
+        /* Print connection descriptor */
+        rc = ble_gap_conn_find(event->conn_update.conn_handle, &desc);
+        if (rc != 0) {
+            ESP_LOGE(TAG, "failed to find connection by handle, error code: %d",
+                    rc);
+            return rc;
+        }
+        // print_conn_desc(&desc);
+        return rc;
+    }
+    
+    return rc;
 }
